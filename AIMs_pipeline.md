@@ -1,6 +1,6 @@
 # Pipeline for AIMs identification
 
-### 0. prep samples
+### 0. Prep samples
 2 cave lions, 7 lions, and 8 tigers were chosen due to the data avability and their phylogentic relationship.
 
 In order to avoid reference bias, domestic cat genome was used (felcat9.0).
