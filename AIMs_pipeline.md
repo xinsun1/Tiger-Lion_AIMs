@@ -129,6 +129,14 @@ ngsDist --pairwise_del --geno ../4-gl/gl_tv_maf05_mis50.fwm_d100k.20k.beagle.gz 
 
 #### 4.2 GL calling
 
+``` bash
+# prep loci for angsd
+awk '{print $3}' SNP.felcat9.column3.20K.bed | sed 's/_/:/' > ../SNP.felcat9.column3.20K.angsd
+
+
+
+```
+
 #### 4.3 data merge?
 
 #### 4.4 test with phap calling
