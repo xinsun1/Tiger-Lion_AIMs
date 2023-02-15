@@ -123,3 +123,19 @@ ngsDist --pairwise_del --geno ../4-gl/gl_tv_maf05_mis50.fwm_d100k.20k.beagle.gz 
 <img src="phy.20K.bs100.tre.png" alt="NJ phylogeny" width="200"/>
 
 
+
+### 4. capture data processing
+#### 4.1 mapping 
+
+#### 4.2 GL calling
+
+#### 4.3 data merge?
+
+#### 4.4 test with phap calling
+
+
+#### 4.5 pcangsd
+
+#### 4.6 phylogeny
+
+
