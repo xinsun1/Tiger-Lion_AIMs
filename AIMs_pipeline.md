@@ -133,14 +133,15 @@ ngsDist --pairwise_del --geno ../4-gl/gl_tv_maf05_mis50.fwm_d100k.20k.beagle.gz 
 # prep loci for angsd
 awk '{print $3}' SNP.felcat9.column3.20K.bed | sed 's/_/:/' > ../SNP.felcat9.column3.20K.angsd
 
-
-
 ```
 
-#### 4.3 data merge?
+Not enough loci covered by capture result.
 
-#### 4.4 test with phap calling
+#### 4.3 Plan B: only using SNPs with high SNP weight
 
+A total of about 5k SNPs retrieved.
+Ideally, these 5k SNPs should be a panel of AIMs. We will test it first.
+Then, these two new sample (actually one sample with replication) will be projected into the pca or directly integrated.
 
 #### 4.5 pcangsd
 
