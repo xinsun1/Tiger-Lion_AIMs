@@ -143,6 +143,10 @@ A total of about 5k SNPs retrieved.
 Ideally, these 5k SNPs should be a panel of AIMs. We will test it first.
 Then, these two new sample (actually one sample with replication) will be projected into the pca or directly integrated.
 
+**NB: two possible bias**  
+ - SNP distribution bias, less likely, can be provide by the distribution of SNPs across the genome
+ - GL/GT calling bias. The called GT/GL could be biased toward the reference. The distribution of the ref vs alt is extremely skewed. Need to be cautious.
+
 #### 4.5 pcangsd
 
 #### 4.6 phylogeny
