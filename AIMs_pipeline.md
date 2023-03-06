@@ -127,6 +127,8 @@ ngsDist --pairwise_del --geno ../4-gl/gl_tv_maf05_mis50.fwm_d100k.20k.beagle.gz 
 ### 4. capture data processing
 #### 4.1 mapping 
 
+Mapped to the felcat9.0 reference genome using paleomix
+
 #### 4.2 GL calling
 
 ``` bash
@@ -139,6 +141,15 @@ Not enough loci covered by capture result.
 
 #### 4.3 Plan B: only using SNPs with high SNP weight
 
+Identification of 5k SNPs:
+ - filterd all variable loci by SNP weight, threshold used 0.6 (relaxed)
+ - mask the locis, about 2 mio after mask
+ - generate GL/GT_pseudo use the 2 mio panel for the two library, only 5k with information
+ - call GL for all samples on the 5k SNPs
+
+**NB:** relaxed filter for data quality
+
+
 A total of about 5k SNPs retrieved.
 Ideally, these 5k SNPs should be a panel of AIMs. We will test it first.
 Then, these two new sample (actually one sample with replication) will be projected into the pca or directly integrated.
@@ -147,7 +158,12 @@ Then, these two new sample (actually one sample with replication) will be projec
  - SNP distribution bias, less likely, can be provide by the distribution of SNPs across the genome
  - GL/GT calling bias. The called GT/GL could be biased toward the reference. The distribution of the ref vs alt is extremely skewed. Need to be cautious.
 
+The result looks good. Need to do something to prove the reference bias is acceptable!
+
 #### 4.5 pcangsd
+
+PCA based on 5k SNPs
+
 
 #### 4.6 phylogeny
 
